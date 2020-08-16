@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="main">
     <nav-header/>
     <div class="content">
         <div class="container">
@@ -21,7 +21,7 @@ export default {
   components: {
     PageFooter,
     NavHeader,
-  }
+  },
 }
 </script>
 

@@ -1,8 +1,8 @@
 <template>
   <nav :class="propClass">
-    <router-link to="/" exact>About</router-link>
-    <router-link to="/gallery">Gallery</router-link>
-    <router-link to="/events">Events</router-link>
+    <router-link to="/" exact>{{this.$t("about")}}</router-link>
+    <router-link to="/gallery">{{this.$t("gallery")}}</router-link>
+    <router-link to="/events">{{this.$t("events")}}</router-link>
   </nav>
 </template>
 

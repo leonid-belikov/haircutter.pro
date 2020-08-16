@@ -1,7 +1,7 @@
 <template>
   <div class="page events-page">
     <h2 class="page-header">
-      events
+      {{this.$t("events")}}
     </h2>
   </div>
 </template>

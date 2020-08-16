@@ -1,9 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 300;
     margin: 0;
     color: #000;
+}
+
+body.no-scroll #main > div {
+    padding-right: 15px;
 }
 
 .container {

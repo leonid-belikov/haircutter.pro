@@ -9,10 +9,4 @@ export default new Vuex.Store({
   getters: {
     text: s => s.text
   },
-  mutations: {
-
-  },
-  actions: {
-
-  },
 })
