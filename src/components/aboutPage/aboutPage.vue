@@ -1,6 +1,8 @@
 <template>
-  <div class="home-page">
-    home page
+  <div class="page about-page">
+    <h2 class="page-header">
+      about
+    </h2>
   </div>
 </template>
 
@@ -11,5 +13,6 @@
 </script>
 
 <style scoped>
-
+.about-page {
+}
 </style>
