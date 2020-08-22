@@ -7,8 +7,13 @@
 </template>
 
 <script>
+import {checkBodyWidth} from "@/utils/helpers";
+
 export default {
-  name: "eventsPage"
+  name: "eventsPage",
+  mounted() {
+    checkBodyWidth()
+  }
 }
 </script>
 

@@ -7,15 +7,12 @@
 </template>
 
 <script>
+import {checkBodyWidth} from "@/utils/helpers";
+
 export default {
   name: "galleryPage",
   mounted() {
-    const bodyWidth = document.body.offsetWidth
-    if (bodyWidth === window.innerWidth) {
-      document.body.classList.add('no-scroll')
-    } else {
-      document.body.classList.remove('no-scroll')
-    }
+    checkBodyWidth()
   }
 }
 </script>
