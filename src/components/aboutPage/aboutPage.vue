@@ -13,6 +13,23 @@
       </div>
     </section>
 
+    <section class="timeline">
+      <div class="step" v-for="step in steps" :key="step.id" :ref="`timelineStep-${step.id}`">
+        <div class="year">{{step.year}}</div>
+        <div class="picture">
+          <img :src="step.imgSrc" alt="">
+        </div>
+        <div class="description">
+          <div class="title">
+            {{step.title}}
+          </div>
+          <div class="text text-muted">
+            {{step.text}}
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
 </template>
 
@@ -21,6 +38,33 @@
 
   export default {
     name: "homePage",
+    computed: {
+      steps() {
+        return [
+          {
+            id: 1,
+            imgSrc: '/img/step1.jpg',
+            year: this.$t("timeline.step1.year"),
+            title: this.$t("timeline.step1.title"),
+            text: this.$t("timeline.step1.text"),
+          },
+          {
+            id: 2,
+            imgSrc: '/img/step2.jpg',
+            year: this.$t("timeline.step2.year"),
+            title: this.$t("timeline.step2.title"),
+            text: this.$t("timeline.step2.text"),
+          },
+          {
+            id: 3,
+            imgSrc: '/img/step3.jpg',
+            year: this.$t("timeline.step2.year"),
+            title: this.$t("timeline.step3.title"),
+            text: this.$t("timeline.step3.text"),
+          },
+        ]
+      }
+    },
     mounted() {
       checkBodyWidth()
     }
@@ -71,12 +115,76 @@
   font-size: 16px;
   font-weight: bold;
   text-align: right;
+  text-transform: uppercase;
   margin-bottom: 0;
 }
 
 .about p.page-quote-author {
   font-size: 12px;
   text-align: right;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 70px;
+}
+
+.timeline:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #eee;
+  height: 150px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.step {
+  position: relative;
+  width: 320px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 16px 20px -20px #444, -4px 16px 20px -7px #444;
+}
+
+.year {
+  position: absolute;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  left: 0;
+  top: -40px;
+  color: #444;
+}
+
+.picture {
+  height: 320px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.picture img {
+  width: 320px;
+}
+
+.description {
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 30px 40px;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.text {
+  line-height: 22px;
 }
 
 </style>
