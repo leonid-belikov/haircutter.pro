@@ -25,7 +25,7 @@ nav a, nav a:hover, nav a:active, nav a:visited {
   text-decoration: none;
   color: #999;
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
   position: relative;
   transition: 200ms;

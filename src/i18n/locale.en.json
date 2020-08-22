@@ -1,5 +1,10 @@
 {
   "about": "About",
   "gallery": "Gallery",
-  "events": "Events"
+  "events": "Events",
+  "about-quote": "Cool quote from the famous barber",
+  "gallery-quote": "Second cool quote from the famous barber",
+  "events-quote": "Third cool quote from the famous barber",
+  "personal-info-1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea facere iste nulla quibusdam quo rerum soluta tempore ullam veniam voluptas. Ad ducimus facere provident qui similique? Deleniti expedita nam tenetur.",
+  "personal-info-2": "Distinctio doloremque impedit minima tempora tenetur vero voluptates. Assumenda consequuntur dolorem doloribus fugit harum placeat qui quo ratione, sapiente sint."
 }

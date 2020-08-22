@@ -34,3 +34,8 @@ body.no-scroll #main > div {
     padding-bottom: 30px;
     border-bottom: 1px solid #ddd;
 }
+
+section {
+    display: flex;
+    margin: 100px 0;
+}
