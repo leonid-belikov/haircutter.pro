@@ -3,8 +3,28 @@
   "gallery": "Gallery",
   "events": "Events",
   "about-quote": "Cool quote from the famous barber",
+  "about-quote-author": "First author",
   "gallery-quote": "Second cool quote from the famous barber",
+  "gallery-quote-author": "Second author",
   "events-quote": "Third cool quote from the famous barber",
+  "events-quote-author": "Third author",
   "personal-info-1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea facere iste nulla quibusdam quo rerum soluta tempore ullam veniam voluptas. Ad ducimus facere provident qui similique? Deleniti expedita nam tenetur.",
-  "personal-info-2": "Distinctio doloremque impedit minima tempora tenetur vero voluptates. Assumenda consequuntur dolorem doloribus fugit harum placeat qui quo ratione, sapiente sint."
+  "personal-info-2": "Distinctio doloremque impedit minima tempora tenetur vero voluptates. Assumenda consequuntur dolorem doloribus fugit harum placeat qui quo ratione, sapiente sint.",
+  "timeline": {
+    "step1": {
+      "year": "2018",
+      "title": "Title text 1",
+      "text": "Lorem ipsum one dolor sit amet, consectetur adipisicing elit. Ea facere iste nulla quibusdam quo rerum soluta tempore ullam veniam voluptas."
+    },
+    "step2": {
+      "year": "2019",
+      "title": "Title text 2",
+      "text": "Lorem ipsum two dolor sit amet, consectetur adipisicing elit. Ea facere iste nulla quibusdam quo rerum soluta tempore ullam veniam voluptas."
+    },
+    "step3": {
+      "year": "2020",
+      "title": "Title text 3",
+      "text": "Lorem ipsum three dolor sit amet, consectetur adipisicing elit. Ea facere iste nulla quibusdam quo rerum soluta tempore ullam veniam voluptas."
+    }
+  }
 }

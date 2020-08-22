@@ -6,8 +6,8 @@
         <h1>haircutter.pro</h1>
       </router-link>
       <nav-menu prop-class="header"/>
-      <div class="translate" @click="handleLangIconClick">
-        <i class="fa fa-2x fa-globe"></i>
+      <div class="translate">
+        <i class="fa fa-2x fa-globe" @click="handleLangIconClick"></i>
         <ul
             v-if="showLangMenu"
             class="lang-menu"
@@ -42,11 +42,11 @@ export default {
       locales: [
         {
           name: 'ru',
-          title: 'русский',
+          title: 'Русский',
         },
         {
           name: 'en',
-          title: 'english',
+          title: 'English',
         },
       ]
     }
@@ -124,7 +124,6 @@ export default {
   bottom: -75px;
   right: 0;
   background: #fff;
-  border: 1px solid #000;
   color: #000;
   padding: 10px 0;
   display: flex;
@@ -132,6 +131,8 @@ export default {
   align-items: flex-start;
   justify-content: center;
   z-index: 999;
+  border-radius: 0;
+  box-shadow: 4px 6px 7px -7px #444, -4px 6px 7px -7px #444;
 }
 
 .lang-menu:before {
