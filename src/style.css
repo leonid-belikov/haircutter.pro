@@ -43,3 +43,11 @@ section {
 .text-muted {
     color: #888;
 }
+
+.logo-wrap path {
+    fill: #999;
+}
+
+.logo-wrap:hover path {
+    fill: #fff;
+}
