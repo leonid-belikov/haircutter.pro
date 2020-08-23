@@ -110,6 +110,7 @@
   justify-content: center;
   align-items: center;
   transition: 200ms;
+  z-index: 10;
 }
 
 .avatar:hover .socnets-box {
@@ -125,6 +126,7 @@
   margin-bottom: 15px;
   opacity: 0.5;
   transition: 100ms;
+  z-index: 1;
 }
 
 .avatar:hover i {
