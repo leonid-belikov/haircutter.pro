@@ -8,6 +8,11 @@ body {
     font-weight: 300;
     margin: 0;
     color: #444;
+    overflow: visible;
+}
+
+body.modal-open {
+    overflow: hidden;
 }
 
 body.no-scroll #main > div {

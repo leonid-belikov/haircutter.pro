@@ -20,9 +20,9 @@ export default new Vuex.Store({
         icon: LogoTT,
         url: 'https://www.tiktok.com/@haircutterpro',
       },
-    }
+    },
   },
   getters: {
-    socnets: s => s.socnets
+    socnets: s => s.socnets,
   },
 })
