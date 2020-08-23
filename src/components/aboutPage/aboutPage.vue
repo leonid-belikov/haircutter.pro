@@ -4,6 +4,10 @@
     <section class="personal-info">
       <div class="avatar">
         <img src="/img/avatar.jpg" alt="">
+        <div class="socnets-box">
+          <socnets/>
+        </div>
+        <i class="fa fa-2x fa-chevron-down"></i>
       </div>
       <div class="about">
         <p class="page-quote">"{{this.$t("about-quote")}}"</p>
@@ -35,9 +39,11 @@
 
 <script>
   import {checkBodyWidth} from "@/utils/helpers";
+  import Socnets from "@/components/common/Socnets";
 
   export default {
     name: "homePage",
+    components: {Socnets},
     computed: {
       steps() {
         return [
@@ -58,7 +64,7 @@
           {
             id: 3,
             imgSrc: '/img/step3.jpg',
-            year: this.$t("timeline.step2.year"),
+            year: this.$t("timeline.step3.year"),
             title: this.$t("timeline.step3.title"),
             text: this.$t("timeline.step3.text"),
           },
@@ -83,11 +89,46 @@
 }
 
 .avatar {
+  position: relative;
   display: flex;
+  box-shadow: 4px 16px 20px -20px #444, -4px 16px 20px -7px #444;
+  overflow: hidden;
 }
 
 .avatar img {
   height: 550px;
+}
+
+.socnets-box {
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms;
+}
+
+.avatar:hover .socnets-box {
+  bottom: 0;
+}
+
+.avatar i {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  margin-bottom: 15px;
+  opacity: 0.5;
+  transition: 100ms;
+}
+
+.avatar:hover i {
+  opacity: 0;
 }
 
 .about {
