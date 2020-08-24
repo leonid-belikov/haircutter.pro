@@ -1,19 +1,19 @@
-import homePage from "@/components/aboutPage/aboutPage";
-import galleryPage from "@/components/galleryPage/galleryPage";
-import eventsPage from "@/components/eventsPage/eventsPage";
+import AboutPage from "@/components/aboutPage/AboutPage";
+import GalleryPage from "@/components/galleryPage/GalleryPage";
+import EventsPage from "@/components/eventsPage/EventsPage";
 
 
 export default [
   {
     path: '/',
-    component: homePage,
+    component: AboutPage,
   },
   {
     path: '/gallery',
-    component: galleryPage,
+    component: GalleryPage,
   },
   {
     path: '/events',
-    component: eventsPage,
+    component: EventsPage,
   },
 ]

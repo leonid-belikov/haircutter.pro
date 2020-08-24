@@ -21,7 +21,7 @@
               :src="selectedPicture"
               alt=""
               class="modal__content-img"
-          >
+          />
           </transition>
           <div class="arrow left" @click="handleClickLeftArrow">
             <i class="fa fa-2x fa-chevron-left"></i>
@@ -52,7 +52,7 @@ const getPrev = i => {
 }
 
 export default {
-  name: "galleryPage",
+  name: "GalleryPage",
   directives: {
     clickOutside: vClickOutside.directive
   },

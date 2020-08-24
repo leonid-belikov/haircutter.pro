@@ -26,5 +26,34 @@
       "title": "Title text 3",
       "text": "Lorem ipsum three dolor sit amet, consectetur adipisicing elit. Ea facere iste nulla quibusdam quo rerum soluta tempore ullam veniam voluptas."
     }
-  }
+  },
+  "events-list": {
+    "event1": {
+      "title": "Event 1 title",
+      "shortDescription": "Lorem ipsum one dolor sit amet, consectetur adipisicing elit. Ab animi error et ex, illo illum in perspiciatis, qui quia quis ratione tenetur voluptatem! Accusamus dolores laudantium nam provident! Architecto blanditiis dolore eveniet exercitationem, illo ipsam nesciunt nisi numquam, porro quaerat sit temporibus.",
+      "description": "Lorem ipsum one dolor sit amet, consectetur adipisicing elit. Ab animi error et ex, illo illum in perspiciatis, qui quia quis ratione tenetur voluptatem! Accusamus dolores laudantium nam provident! Architecto blanditiis dolore eveniet exercitationem, illo ipsam nesciunt nisi numquam, porro quaerat sit temporibus. Aliquid amet asperiores incidunt nihil pariatur soluta, sunt ullam. Consequatur maiores, optio. Aliquam commodi consequuntur culpa distinctio ea eaque, et eum facere in laboriosam magnam maiores natus nostrum optio quae quia reiciendis sunt vero! Aliquid consectetur consequuntur corporis, deserunt dolorum enim est ex harum libero nemo neque quae quibusdam, rem repellat, reprehenderit sequi tenetur. Facere incidunt repellat reprehenderit."
+    },
+    "event2": {
+      "title": "Event 2 title",
+      "shortDescription": "Lorem ipsum two dolor sit amet, consectetur adipisicing elit. Ab animi error et ex, illo illum in perspiciatis, qui quia quis ratione tenetur voluptatem! Accusamus dolores laudantium nam provident! Architecto blanditiis dolore eveniet exercitationem, illo ipsam nesciunt nisi numquam, porro quaerat sit temporibus.",
+      "description": "Lorem ipsum two dolor sit amet, consectetur adipisicing elit. Ab animi error et ex, illo illum in perspiciatis, qui quia quis ratione tenetur voluptatem! Accusamus dolores laudantium nam provident! Architecto blanditiis dolore eveniet exercitationem, illo ipsam nesciunt nisi numquam, porro quaerat sit temporibus. Aliquid amet asperiores incidunt nihil pariatur soluta, sunt ullam. Consequatur maiores, optio. Aliquam commodi consequuntur culpa distinctio ea eaque, et eum facere in laboriosam magnam maiores natus nostrum optio quae quia reiciendis sunt vero! Aliquid consectetur consequuntur corporis, deserunt dolorum enim est ex harum libero nemo neque quae quibusdam, rem repellat, reprehenderit sequi tenetur. Facere incidunt repellat reprehenderit."
+    },
+    "event3": {
+      "title": "Event 3 title",
+      "shortDescription": "Lorem ipsum three dolor sit amet, consectetur adipisicing elit. Ab animi error et ex, illo illum in perspiciatis, qui quia quis ratione tenetur voluptatem! Accusamus dolores laudantium nam provident! Architecto blanditiis dolore eveniet exercitationem, illo ipsam nesciunt nisi numquam, porro quaerat sit temporibus.",
+      "description": "Lorem ipsum three dolor sit amet, consectetur adipisicing elit. Ab animi error et ex, illo illum in perspiciatis, qui quia quis ratione tenetur voluptatem! Accusamus dolores laudantium nam provident! Architecto blanditiis dolore eveniet exercitationem, illo ipsam nesciunt nisi numquam, porro quaerat sit temporibus. Aliquid amet asperiores incidunt nihil pariatur soluta, sunt ullam. Consequatur maiores, optio. Aliquam commodi consequuntur culpa distinctio ea eaque, et eum facere in laboriosam magnam maiores natus nostrum optio quae quia reiciendis sunt vero! Aliquid consectetur consequuntur corporis, deserunt dolorum enim est ex harum libero nemo neque quae quibusdam, rem repellat, reprehenderit sequi tenetur. Facere incidunt repellat reprehenderit."
+    },
+    "event4": {
+      "title": "Event 4 title",
+      "shortDescription": "Lorem ipsum four dolor sit amet, consectetur adipisicing elit. Ab animi error et ex, illo illum in perspiciatis, qui quia quis ratione tenetur voluptatem! Accusamus dolores laudantium nam provident! Architecto blanditiis dolore eveniet exercitationem, illo ipsam nesciunt nisi numquam, porro quaerat sit temporibus.",
+      "description": "Lorem ipsum four dolor sit amet, consectetur adipisicing elit. Ab animi error et ex, illo illum in perspiciatis, qui quia quis ratione tenetur voluptatem! Accusamus dolores laudantium nam provident! Architecto blanditiis dolore eveniet exercitationem, illo ipsam nesciunt nisi numquam, porro quaerat sit temporibus. Aliquid amet asperiores incidunt nihil pariatur soluta, sunt ullam. Consequatur maiores, optio. Aliquam commodi consequuntur culpa distinctio ea eaque, et eum facere in laboriosam magnam maiores natus nostrum optio quae quia reiciendis sunt vero! Aliquid consectetur consequuntur corporis, deserunt dolorum enim est ex harum libero nemo neque quae quibusdam, rem repellat, reprehenderit sequi tenetur. Facere incidunt repellat reprehenderit."
+    },
+    "event5": {
+      "title": "Event 5 title",
+      "shortDescription": "Lorem ipsum five dolor sit amet, consectetur adipisicing elit. Ab animi error et ex, illo illum in perspiciatis, qui quia quis ratione tenetur voluptatem! Accusamus dolores laudantium nam provident! Architecto blanditiis dolore eveniet exercitationem, illo ipsam nesciunt nisi numquam, porro quaerat sit temporibus.",
+      "description": "Lorem ipsum five dolor sit amet, consectetur adipisicing elit. Ab animi error et ex, illo illum in perspiciatis, qui quia quis ratione tenetur voluptatem! Accusamus dolores laudantium nam provident! Architecto blanditiis dolore eveniet exercitationem, illo ipsam nesciunt nisi numquam, porro quaerat sit temporibus. Aliquid amet asperiores incidunt nihil pariatur soluta, sunt ullam. Consequatur maiores, optio. Aliquam commodi consequuntur culpa distinctio ea eaque, et eum facere in laboriosam magnam maiores natus nostrum optio quae quia reiciendis sunt vero! Aliquid consectetur consequuntur corporis, deserunt dolorum enim est ex harum libero nemo neque quae quibusdam, rem repellat, reprehenderit sequi tenetur. Facere incidunt repellat reprehenderit."
+    }
+  },
+  "details": "Details",
+  "hideDetails": "Hide details"
 }
