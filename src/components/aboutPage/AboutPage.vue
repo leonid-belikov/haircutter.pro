@@ -42,7 +42,7 @@
   import Socnets from "@/components/common/Socnets";
 
   export default {
-    name: "homePage",
+    name: "AboutPage",
     components: {Socnets},
     computed: {
       steps() {
