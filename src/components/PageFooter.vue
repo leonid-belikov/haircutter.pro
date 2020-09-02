@@ -18,14 +18,36 @@ name: "PageFooter",
 </script>
 
 <style scoped>
+
 .page-footer {
-  height: 100px;
-  background: black;
+  background: #000;
   color: #fff;
   display: flex;
+  height: 120px;
 }
 
 .container {
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer {
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 576px) {
+  .page-footer {
+    height: 100px;
+  }
+  .footer {
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+  .container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
 </style>

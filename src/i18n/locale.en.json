@@ -25,6 +25,11 @@
       "year": "2020",
       "title": "Title text 3",
       "text": "Lorem ipsum three dolor sit amet, consectetur adipisicing elit. Ea facere iste nulla quibusdam quo rerum soluta tempore ullam veniam voluptas."
+    },
+    "step4": {
+      "year": "2021",
+      "title": "Title text 4",
+      "text": "Lorem ipsum four dolor sit amet, consectetur adipisicing elit. Ea facere iste nulla quibusdam quo rerum soluta tempore ullam veniam voluptas."
     }
   },
   "events-list": {

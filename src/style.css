@@ -15,12 +15,8 @@ body.modal-open {
     overflow: hidden;
 }
 
-body.no-scroll #main > div {
-    padding-right: 15px;
-}
-
 .container {
-    width: 1200px;
+    width: 90%;
     display: flex;
     margin: 0 auto;
 }
@@ -42,7 +38,7 @@ body.no-scroll #main > div {
 
 section {
     display: flex;
-    margin: 100px 0;
+    margin: 50px 0;
 }
 
 .text-muted {
@@ -55,4 +51,25 @@ section {
 
 .logo-wrap:hover path {
     fill: #fff;
+}
+
+@media (min-width: 768px) {
+    section:not(:last-child) {
+        margin: 100px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1100px;
+    }
+    body.no-scroll #main > div {
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 2200px) {
+    .container {
+        width: 50vw;
+    }
 }
