@@ -166,7 +166,7 @@ export default {
 .event__title {
   position: absolute;
   top: 30px;
-  left: 30px;
+  left: -20px;
   z-index: 10;
   background-color: rgba(221, 221, 221, 0.9);
   padding: 20px;
@@ -214,6 +214,12 @@ export default {
 
 .fade-enter, .fade-leave-to {
   opacity: 0;
+}
+
+@media (min-width: 576px) {
+  .event__title {
+    left: 30px;
+  }
 }
 
 </style>
