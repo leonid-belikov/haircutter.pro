@@ -28,6 +28,7 @@ export default {
 <style scoped>
 .content {
   min-height: calc(100vh - 220px);
+  overflow: hidden;
   background: #fff;
 }
 

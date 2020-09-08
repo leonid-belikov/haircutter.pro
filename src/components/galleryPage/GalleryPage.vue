@@ -107,8 +107,8 @@ export default {
 .pictures {
   display: grid;
   gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: repeat(11, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-auto-rows: minmax(250px, 1fr);
 }
 
 .picture {
@@ -129,8 +129,8 @@ export default {
 }
 
 .picture.big {
-  grid-column: span 2;
-  grid-row: span 2;
+  grid-column: span 1;
+  grid-row: span 1;
 }
 
 .picture img {
@@ -158,9 +158,9 @@ export default {
 }
 
 .modal i.fa-times {
-  position: absolute;
-  right: -50px;
-  top: -50px;
+  position: fixed;
+  right: 30px;
+  top: 15px;
 }
 
 .modal__content {
@@ -211,6 +211,21 @@ export default {
 
 .fade-enter-to, .fade-leave {
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .picture.big {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal i.fa-times {
+    position: absolute;
+    right: -50px;
+    top: -50px;
+  }
 }
 
 </style>

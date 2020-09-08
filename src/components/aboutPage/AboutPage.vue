@@ -68,6 +68,13 @@
             title: this.$t("timeline.step3.title"),
             text: this.$t("timeline.step3.text"),
           },
+          {
+            id: 4,
+            imgSrc: '/img/step4.jpg',
+            year: this.$t("timeline.step4.year"),
+            title: this.$t("timeline.step4.title"),
+            text: this.$t("timeline.step4.text"),
+          },
         ]
       }
     },
@@ -84,19 +91,25 @@
 
 .personal-info {
   align-items: center;
-  justify-content: space-between;
-  height: 550px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .avatar {
   position: relative;
   display: flex;
-  box-shadow: 4px 16px 20px -20px #444, -4px 16px 20px -7px #444;
+  box-shadow: 4px 16px 20px -15px #444, -4px 16px 20px -15px #444;
   overflow: hidden;
+  width: 100%;
 }
 
 .avatar img {
-  height: 550px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
 
 .socnets-box {
@@ -134,10 +147,8 @@
 }
 
 .about {
-  width: 650px;
-  height: 100%;
-  margin-left: 150px;
-  padding-top: 40px;
+  margin-top: 40px;
+  padding: 40px 20px;
   background-color: #eee;
   display: flex;
   flex-direction: column;
@@ -145,13 +156,11 @@
 }
 
 .about p {
-  width: 400px;
-  line-height: 28px;
-  text-align: justify;
+  line-height: 22px;
 }
 
 .about p:not(:last-child) {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 .about p.page-quote {
@@ -160,11 +169,13 @@
   text-align: right;
   text-transform: uppercase;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .about p.page-quote-author {
   font-size: 12px;
   text-align: right;
+  width: 100%;
 }
 
 .timeline {
@@ -172,26 +183,30 @@
   display: flex;
   justify-content: space-around;
   padding-top: 70px;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
 }
 
-.timeline:before {
+.step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 16px 20px -20px #444, -4px 16px 20px -20px #444;
+}
+
+.step:before {
   content: '';
   display: block;
   position: absolute;
   background-color: #eee;
   height: 150px;
-  width: 100%;
-  top: 0;
-  left: 0;
+  width: 112%;
+  top: -90px;
+  left: -6%;
 }
 
-.step {
-  position: relative;
-  width: 320px;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 4px 16px 20px -20px #444, -4px 16px 20px -7px #444;
+.step:not(:last-child) {
+  margin-bottom: 150px;
 }
 
 .year {
@@ -208,10 +223,16 @@
   height: 320px;
   overflow: hidden;
   flex-shrink: 0;
+  position: relative;
 }
 
 .picture img {
-  width: 320px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
 
 .description {
@@ -228,6 +249,44 @@
 
 .text {
   line-height: 22px;
+}
+
+@media (min-width: 576px) {
+  .avatar {
+    width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .avatar {
+    width: 350px;
+  }
+  .personal-info {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .avatar {
+    flex-shrink: 0;
+    margin-right: 55px;
+  }
+  .about {
+    padding: 40px 40px 60px;
+    margin-top: 0;
+  }
+  .about p {
+  }
+}
+
+@media (min-width: 992px) {
+  .avatar {
+    width: 522px;
+  }
+  .step {
+    width: 45%;
+  }
+  .step:nth-child(3) {
+    margin-bottom: 0;
+  }
 }
 
 </style>

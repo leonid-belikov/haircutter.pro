@@ -6,6 +6,24 @@
         <h1>haircutter.pro</h1>
       </router-link>
       <nav-menu prop-class="header"/>
+      <div class="burger-menu">
+        <i class="fa fa-2x fa-reorder" @click="handleMenuIconClick"></i>
+        <ul
+            v-if="showMainMenu"
+            class="main-menu"
+            v-click-outside="handleClickOutsideMainMenu">
+          <li
+              v-for="item in menuItems"
+              class="main-menu-item"
+              :class="{selected: item.path === selectedMenuItem}"
+              :key="item.name"
+              @click="() => handleMenuItemClick()">
+            <router-link :to="item.path" exact>
+              {{item.title}}
+            </router-link>
+          </li>
+        </ul>
+      </div>
       <div class="translate">
         <i class="fa fa-2x fa-globe" @click="handleLangIconClick"></i>
         <ul
@@ -39,6 +57,7 @@ export default {
   data() {
     return {
       showLangMenu: false,
+      showMainMenu: false,
       locales: [
         {
           name: 'ru',
@@ -48,13 +67,33 @@ export default {
           name: 'en',
           title: 'English',
         },
-      ]
+      ],
+      menuItems: [
+        {
+          name: 'about',
+          path: '/',
+          title: this.$t('about'),
+        },
+        {
+          name: 'gallery',
+          path: '/gallery',
+          title: this.$t('gallery'),
+        },
+        {
+          name: 'events',
+          path: '/events',
+          title: this.$t('events'),
+        },
+      ],
     }
   },
   computed: {
     selectedLang() {
       return this.$i18n.locale
-    }
+    },
+    selectedMenuItem() {
+      return this.$route.path
+    },
   },
   methods: {
     handleLocaleClick(lang) {
@@ -62,11 +101,24 @@ export default {
       this.showLangMenu = false;
     },
     handleLangIconClick() {
+      this.showMainMenu = false;
       this.showLangMenu = !this.showLangMenu
     },
     handleClickOutsideLangMenu() {
       if (this.showLangMenu) {
         this.showLangMenu = false
+      }
+    },
+    handleMenuItemClick() {
+      this.showMainMenu = false;
+    },
+    handleMenuIconClick() {
+      this.showLangMenu = false;
+      this.showMainMenu = !this.showMainMenu
+    },
+    handleClickOutsideMainMenu() {
+      if (this.showMainMenu) {
+        this.showMainMenu = false
       }
     },
   }
@@ -91,17 +143,24 @@ export default {
 }
 
 .logo img {
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
+  display: none;
 }
 
 .logo h1 {
   font-family: 'Work Sans', 'Montserrat', sans-serif;
   font-weight: 700;
+  font-size: 24px;
 }
 
-.translate {
+.burger-menu {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.translate, .burger-menu {
   display: flex;
   align-items: center;
   margin-left: 30px;
@@ -110,16 +169,16 @@ export default {
   position: relative;
 }
 
-.translate i {
+.translate i, .burger-menu i {
   opacity: 0.5;
   transition: 200ms;
 }
 
-.translate i:hover {
+.translate i:hover, .burger-menu i:hover {
   opacity: 1;
 }
 
-.lang-menu {
+.lang-menu, .main-menu {
   position: absolute;
   bottom: -75px;
   right: 0;
@@ -135,7 +194,11 @@ export default {
   box-shadow: 4px 6px 7px -7px #444, -4px 6px 7px -7px #444;
 }
 
-.lang-menu:before {
+.main-menu {
+  bottom: -104px;
+}
+
+.lang-menu:before, .main-menu:before {
   content: '';
   display: block;
   height: 8px;
@@ -149,23 +212,52 @@ export default {
   border-bottom: 8px solid #fff;
 }
 
-.lang-item {
+.lang-item, .main-menu-item {
   list-style: none;
   padding: 5px 25px;
-  width: 120px;
+  width: 125px;
   transition: 200ms;
 }
 
-.lang-item.selected {
+.lang-item.selected, .main-menu-item.selected {
   font-weight: 700;
 }
 
-.lang-item:hover {
+.lang-item:hover, .main-menu-item:hover {
   background-color: #ddd;
 }
 
-.lang-item:active {
+.lang-item:active, .main-menu-item:active {
   background-color: #555;
+}
+
+.main-menu-item a, .main-menu-item:hover a, .main-menu-item a:active, .main-menu-item a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .logo img {
+    display: block;
+    height: 100px;
+    width: 100px;
+  }
+  .logo h1 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+  }
+  .burger-menu {
+    display: none;
+  }
 }
 
 </style>
