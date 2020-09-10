@@ -68,7 +68,11 @@ export default {
           title: 'English',
         },
       ],
-      menuItems: [
+    }
+  },
+  computed: {
+    menuItems() {
+      return [
         {
           name: 'about',
           path: '/',
@@ -84,10 +88,8 @@ export default {
           path: '/events',
           title: this.$t('events'),
         },
-      ],
-    }
-  },
-  computed: {
+      ]
+    },
     selectedLang() {
       return this.$i18n.locale
     },
